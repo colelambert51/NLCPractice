@@ -1,0 +1,292 @@
+<!---->
+<div class="chat__popup" id="chat__form--container">
+    <form action="#" class="form__container">
+        <div class="chat__window--head">
+            <h4><i class="fa fa-comment"></i>Chat Window</h4>
+            <span class="close__btn" onclick="closeChatWindow">
+                <i class="fa fa-times"></i>
+            </span>
+        </div>
+
+        <div class="msg__container">
+            <div class="msg">
+                <p>Hey, how may I help you?</p>
+                <span>9:34pm</span>
+            </div>
+        </div>
+
+        <div class="chat__box--container">
+            <div class="chat__box">
+                <input type="text" placeholder="Type your message..." name="msg" required>
+                <button type="submit" class="btn"><i class="fa fa-chevron-circle-right send-btn"></i></button>
+            </div>
+        </div>
+    </form>
+</div>
+<!---->
+
+/*
+.chat__button--container{
+    position: fixed;
+    bottom: 5vh;
+    right: 5vw;
+}
+
+.fa-circle-question{
+    font-size: 2rem;
+    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+    padding: 4px 8px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+    text-decoration: none;
+}
+
+#chat__button{
+    color: #141414;
+}
+
+.services__button#fixed {
+    font-size: 1rem;
+    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+    padding: 14px 32px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: all 0.35s;
+    outline: none;
+    position: static;
+    
+}
+
+
+.open__btn{
+    background: #7d72e4;
+    color: whitesmoke;
+    padding: 16px 20px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    font-size: 16px;
+    margin-right: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px 0px, rgba(17, 17, 26, 0.05) 0px 8px 32px 0px;
+    
+}
+
+
+
+.slider .element#s2{
+    width: 150px;
+    background-color: white;
+    padding: 50px 25px;
+    margin: 0 10px 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/scroller2.jpg');
+    background-size: cover ;
+}
+
+.slider .element#s3{
+    width: 150px;
+    background-color: white;
+    padding: 50px 25px;
+    margin: 0 10px 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/scroller3.jpg');
+    background-size: cover ;
+}
+
+.slider .element#s4{
+    width: 150px;
+    background-color: white;
+    padding: 50px 25px;
+    margin: 0 10px 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/scroller4.jpg');
+    background-size: cover ;
+}
+
+.slider .element#s5{
+    width: 150px;
+    background-color: white;
+    padding: 50px 25px;
+    margin: 0 10px 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/scroller5.jpg');
+    background-size: cover ;
+}
+
+.slider .element#s6{
+    width: 150px;
+    background-color: white;
+    padding: 50px 25px;
+    margin: 0 10px 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/scroller6.jpg');
+    background-size: cover ;
+}
+
+.slider .element#s7{
+    width: 150px;
+    background-color: white;
+    padding: 50px 25px;
+    margin: 0 10px 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/scroller1.jpg');
+    background-size: cover ;
+}
+
+.slider .element#s8{
+    width: 150px;
+    background-color: white;
+    padding: 50px 25px;
+    margin: 0 10px 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/scroller2.jpg');
+    background-size: cover ;
+}
+
+.slider .element#s9{
+    width: 150px;
+    background-color: white;
+    padding: 50px 25px;
+    margin: 0 10px 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/scroller3.jpg');
+    background-size: cover ;
+}
+
+.slider .element#s10{
+    width: 150px;
+    background-color: white;
+    padding: 50px 25px;
+    margin: 0 10px 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/scroller4.jpg');
+    background-size: cover ;
+}
+
+.slider .element#s11{
+    width: 150px;
+    background-color: white;
+    padding: 50px 25px;
+    margin: 0 10px 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/scroller5.jpg');
+    background-size: cover ;
+}
+
+.slider .element#s12{
+    width: 150px;
+    background-color: white;
+    padding: 50px 25px;
+    margin: 0 10px 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/scroller6.jpg');
+    background-size: cover ;
+}
+
+.slider .element#s1{
+    width: 150px;
+    background-color: white;
+    padding: 25px 25px;
+    margin: 0 10px 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/scroller1.jpg');
+    background-size: cover ;
+}
+
+<?php
+    require("index.php");
+    ?>
+
+    <?php
+session_start();
+if(isset($_POST['save']))
+{
+    extract($_POST);
+    include 'dbconnect.php';
+    $password = md5(mysqli_real_escape_string($conn, $password));
+
+    $sql = mysqli_query($conn,"SELECT * FROM users where Email ='$email' and Password ='$password'");
+    $row = mysqli_fetch_array($sql);
+    if(is_array($row))
+    {
+        $_SESSION["ID"] = $row['ID'];
+        $_SESSION["Email"]=$row['Email'];
+        header("Location: index.html");
+    }
+    else{
+        echo "Invalid Email / Password";
+    }
+}
+?>
+
+
+<div class="alert alert-success
+            alert-dismissible fade show" role="alert">
+    
+            <strong>Success!</strong> Your account is
+            now created and you can login.
+            <button type="button" class="close"
+                data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+
+        body{
+    --black: #fefefe;
+    --font-color: #0f0f0f;
+}
+
+
+.dark__mode{
+    --black: #101720;
+    --font-color: #fefefe;
+}

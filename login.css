@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+}
+
+form{
+    background: #989898ce;
+    width: 350px;
+    height: 550px;
+    padding: 75px 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+.text__box{
+    position: relative;
+    border-bottom: 2px solid white;
+    margin: 35px 0;
+}
+
+.text__box input{
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: white;
+    height: 30px;
+}
+
+.login__btn{
+    height: 45px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-image: linear-gradient(to right top, #b721ff 0%, #21d4fd 100%);
+    background-size: 200%;
+    color: white;
+    font-size: 16px;
+}
+
+.login__btn:hover{
+    background-position: right;
+
+}
+
+.signup{
+    color: white;
+    margin-top: 45px;
+    text-align: center;
+}
+
+.signup a{
+    color: black;
+    text-align: center;
+}
+
+.notification{
+    position: fixed;
+    display: none;
+    bottom: 4px;
+    right: 4px;
+    width: 30vw;
+    border-radius: 6px;
+    background-color: #313e2c;
+    color: #5cd41f;
+    box-shadow: 0 1px 10px rgba(0,0,0, 0.1);
+    transform: translateY(30px);
+    opacity: 0;
+    visibility: hidden;
+    animation: fade-in 5s linear;
+}
+
+.notification__icon{
+    height: 26px;
+    width: 26px;
+    margin-right: 4px;
+}
+
+.notification__icon p{
+    padding-left: 60px;
+    bottom: 10px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin-right: 4px;
+    font-size: 1rem;
+}
+
+.notification__body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 8px;
+}
+
+.notification__progress{
+    position: absolute;
+    left: 4px;
+    bottom: 4px;
+    width: calc(100% - 8px);
+    height: 3px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: linear-gradient(to right, #313e2c, #5cd41f);
+    border-radius: inherit;
+    animation: progress 2.2s 0.3s linear;
+}
+
+
+
+@keyframes fade-in {
+    5% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    95% {
+        opacity: 1;
+        transform: scaleX(0);
+    }
+}
+
+@keyframes progress {
+    to {
+        transform: scaleX(1);
+    }
+}
+
+.logout{
+    background: #989898ce;
+    width: 350px;
+    height: 550px;
+    padding: 75px 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logout p{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.logout a{
+    text-align: center;
+    font-size: 1.25rem;
+    text-decoration: none;
+    padding-left: 50px;
+    color: #0c0c0c;
+}
